@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom';
 import axios from "axios";
 import { useParams } from 'react-router';
 import "../../../css/process.css";
+import NavBar from "../NavBar/NavBar"
 
 
 
@@ -44,7 +45,7 @@ const Process = function () {
     useEffect(() => { process() }, [])
 
     return (<div>
-
+        <NavBar></NavBar>
         {infoprocess.map((value, index) => <div key={index}>
             <div className="container-fluid">
                 <div className="row">
