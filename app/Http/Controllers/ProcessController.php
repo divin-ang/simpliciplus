@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\models\Process;
-use App\models\Container;
-use App\models\SubContainer;
+use App\Models\Process;
+use App\Models\Container;
+use App\Models\SubContainer;
 use Illuminate\Support\Facades\DB;
 
 class ProcessController extends Controller

@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use App\models\Process;
+use App\Models\Process;
 
 class CreateProcessesTable extends Migration
 {
@@ -22,7 +22,7 @@ class CreateProcessesTable extends Migration
             $table->boolean('process_draft_mode')->nullable();
             $table->string('process_duration',200)->nullable();
 
-            $table->unsignedBigInteger('provider_id');
+            $table->unsignedInteger('provider_id')->unsigned();
             $table->foreign('provider_id')
                 ->references('provider_id')
                 ->on('providers')
@@ -362,8 +362,8 @@ class CreateProcessesTable extends Migration
               'process_description' => '',
               'process_link' => 'https://formulaires.simplici.grandchambery.fr/eau/je-resilie-mon-abonnement/',
               'process_draft_mode' => 'false',
-              'process_duration' => '',
-              'provider_id' => '18',
+              'process_duration' => '5',
+              'provider_id' => '19',
             ],
             37 => [
               'process_id' => '38',
@@ -377,11 +377,11 @@ class CreateProcessesTable extends Migration
             38 => [
               'process_id' => '39',
               'process_name' => 'Je souhaite prendre un rendez-vous pour toute démarche administrative',
-              'process_description' => '',
+              'process_description' => 'Accueil physique pour toute demande administrative concernant votre contrat d\'eau. Si votre situation l’exige, nous vous recevons exclusivement sur rendez-vous au 298 rue de Chantabord à Chambéry ou avenue Denis Therme à Le Châtelard',
               'process_link' => 'https://simplici.grandchambery.fr/je-souhaite-prendre-un-rendez-vous-pour/',
               'process_draft_mode' => 'false',
-              'process_duration' => '',
-              'provider_id' => '18',
+              'process_duration' => '5',
+              'provider_id' => '19',
             ],
             39 => [
               'process_id' => '40',
@@ -416,8 +416,8 @@ class CreateProcessesTable extends Migration
               'process_description' => '',
               'process_link' => 'https://formulaires.simplici.grandchambery.fr/dechets/je-souhaite-deposer-des-dechets-amiantes-en-dechetterie/',
               'process_draft_mode' => 'false',
-              'process_duration' => '',
-              'provider_id' => '18',
+              'process_duration' => '10',
+              'provider_id' => '21',
             ],
             43 => [
               'process_id' => '44',
@@ -425,8 +425,8 @@ class CreateProcessesTable extends Migration
               'process_description' => '',
               'process_link' => 'https://formulaires.simplici.grandchambery.fr/dechets/je-demande-du-materiel-de-gestion-de-dechets-pour-un-evenement/',
               'process_draft_mode' => 'false',
-              'process_duration' => '',
-              'provider_id' => '18',
+              'process_duration' => '5',
+              'provider_id' => '21',
             ],
             44 => [
               'process_id' => '45',
@@ -434,17 +434,20 @@ class CreateProcessesTable extends Migration
               'process_description' => '',
               'process_link' => 'https://formulaires.simplici.grandchambery.fr/dechets/je-demande-du-materiel-pour-une-operation-de-nettoyage-de-la-nature/',
               'process_draft_mode' => 'false',
-              'process_duration' => '',
-              'provider_id' => '18',
+              'process_duration' => '5',
+              'provider_id' => '21',
             ],
             45 => [
               'process_id' => '46',
               'process_name' => 'Je réserve mon composteur individuel',
-              'process_description' => '',
+              'process_description' => "Dimensions des composteurs :
+              Petit modèle : 1m X 1m (capacité de 300L environ)
+              Grand modèle : 1.25m X 1.25m (capacité de 600L environ)
+              La capacité des composteurs est déterminée par Grand Chambéry en fonction du nombre de personnes dans le foyer et de la superficie du terrain.",
               'process_link' => 'https://formulaires.simplici.grandchambery.fr/dechets/je-reserve-mon-composteur-individuel/',
               'process_draft_mode' => 'false',
-              'process_duration' => '',
-              'provider_id' => '18',
+              'process_duration' => '5',
+              'provider_id' => '21',
             ],
             46 => [
               'process_id' => '47',
@@ -467,11 +470,17 @@ class CreateProcessesTable extends Migration
             48 => [
               'process_id' => '49',
               'process_name' => 'J\'emprunte un broyeur de végétaux',
-              'process_description' => '',
+              'process_description' => "L’agglomération de Grand Chambéry est en cours d’expérimentation pour prêter des broyeurs de végétaux aux habitants du territoire. Durant cette phase de test de quelques semaines, uniquement les habitants de la Ville de Chambéry, peuvent emprunter ces broyeurs de végétaux.
+
+              Deux tailles différentes sont proposées  :
+              
+              Broyeurs permettant de broyer des branches d’un diamètre de 30 mm maximum (Poids : 27 kg, Dimension : mesure au sol 107 x 48 cm pour 143 cm de haut - entonnoir démontable)
+              Broyeurs permettant de broyer des branches d’un diamètre de 50 mm maximum (Poids : 52 kg, Dimension : mesure au sol 105 x 50 cm 137cm de haut - entonnoir démontable)
+              Pour rappel, tous les habitants de l'agglomération peuvent emprunter un broyeur semi-professionnel : voir ici => https://www.grandchambery.fr/2482-broyage-des-vegetaux.htm",
               'process_link' => 'https://formulaires.simplici.grandchambery.fr/dechets/j-emprunte-un-broyeur-de-vegetaux/',
               'process_draft_mode' => 'false',
-              'process_duration' => '',
-              'provider_id' => '18',
+              'process_duration' => '5',
+              'provider_id' => '21',
             ],
             49 => [
               'process_id' => '50',
@@ -1421,11 +1430,11 @@ class CreateProcessesTable extends Migration
             154 => [
               'process_id' => '155',
               'process_name' => 'Je demande la création de la carte de covoiturage Grand Chambéry',
-              'process_description' => '',
+              'process_description' => 'L’inscription au service est réservée aux personnes âgées de plus de 15 ans révolus',
               'process_link' => 'https://formulaires.simplici.grandchambery.fr/covoiturage/',
               'process_draft_mode' => 'false',
-              'process_duration' => '',
-              'provider_id' => '18',
+              'process_duration' => '5',
+              'provider_id' => '22',
             ],
             155 => [
               'process_id' => '156',
@@ -2132,11 +2141,14 @@ class CreateProcessesTable extends Migration
             233 => [
               'process_id' => '234',
               'process_name' => 'Je réserve mon composteur individuel',
-              'process_description' => '',
+              'process_description' => "Dimensions des composteurs :
+              Petit modèle : 1m X 1m (capacité de 300L environ)
+              Grand modèle : 1.25m X 1.25m (capacité de 600L environ)
+              La capacité des composteurs est déterminée par Grand Chambéry en fonction du nombre de personnes dans le foyer et de la superficie du terrain.",
               'process_link' => 'https://formulaires.simplici.grandchambery.fr/dechets/je-reserve-mon-composteur-individuel/',
               'process_draft_mode' => 'false',
-              'process_duration' => '',
-              'provider_id' => '18',
+              'process_duration' => '5',
+              'provider_id' => '21',
             ],
             234 => [
               'process_id' => '235',
@@ -2150,11 +2162,17 @@ class CreateProcessesTable extends Migration
             235 => [
               'process_id' => '236',
               'process_name' => 'J\'emprunte un broyeur de végétaux',
-              'process_description' => '',
+              'process_description' => "L’agglomération de Grand Chambéry est en cours d’expérimentation pour prêter des broyeurs de végétaux aux habitants du territoire. Durant cette phase de test de quelques semaines, uniquement les habitants de la Ville de Chambéry, peuvent emprunter ces broyeurs de végétaux.
+
+              Deux tailles différentes sont proposées  :
+              
+              Broyeurs permettant de broyer des branches d’un diamètre de 30 mm maximum (Poids : 27 kg, Dimension : mesure au sol 107 x 48 cm pour 143 cm de haut - entonnoir démontable)
+              Broyeurs permettant de broyer des branches d’un diamètre de 50 mm maximum (Poids : 52 kg, Dimension : mesure au sol 105 x 50 cm 137cm de haut - entonnoir démontable)
+              Pour rappel, tous les habitants de l'agglomération peuvent emprunter un broyeur semi-professionnel : voir ici => https://www.grandchambery.fr/2482-broyage-des-vegetaux.htm",
               'process_link' => 'https://formulaires.simplici.grandchambery.fr/dechets/j-emprunte-un-broyeur-de-vegetaux/',
               'process_draft_mode' => 'false',
-              'process_duration' => '',
-              'provider_id' => '18',
+              'process_duration' => '5',
+              'provider_id' => '21',
             ],
             236 => [
               'process_id' => '237',
@@ -2204,20 +2222,25 @@ class CreateProcessesTable extends Migration
             241 => [
               'process_id' => '242',
               'process_name' => 'Je fais une demande de branchement',
-              'process_description' => '',
+              'process_description' => 'Vous venez d’obtenir un permis de construire ou un permis d’aménager et vous souhaitez la mise en service d’un point d’eau. Pour que l’eau arrive jusqu’à votre robinet, il convient de réaliser un branchement entre le réseau public et l’emplacement du nouveau compteur d’eau et de souscrire un contrat d’abonnement. Cette procédure s’applique UNIQUEMENT aux travaux de branchements situés sur le domaine public (compteur en limite de propriété). Les travaux réalisés sur le domaine privé (raccordement de l’habitation au compteur) sont à la charge exclusive du propriétaire et confiés à l’entreprise de son choix. Ce branchement doit faire l’objet d’une autorisation par le Service des Eaux de Grand Chambéry. Votre projet se situe dans l’une des communes dépendantes de l’antenne de Chambéry : Barberaz, Barby, Bassens, Challes-les Eaux, Chambéry, Cognin, Curienne, Jacob-Bellecombette, La Motte-Servolex, La Ravoire, La Thuile, Les Déserts, Montagnole, Puygros, Saint Alban Leysse, Saint Baldoph, Saint Cassin, Saint Jean d’Arvey, Saint Jeoire Prieuré, Saint Sulpice, Sonnaz, Thoiry, Vérel-Pragondran, Vimines. Pour faire cette demande, nous vous invitons à nous envoyer un courrier à l’adresse eau.assainissement@grandchambery.fr en nous joignant impérativement les pièces indiquées ci-dessous. Votre projet se situe dans l’une des communes dépendantes de l’antenne des Bauges : Aillon le Jeune, Aillon le Vieux, Arith, Bellecombe en Bauges, Doucy en Bauges, Ecole en Bauges, Jarsy, La Compôte, la Motte en Bauges, Le Chatelard, Le Noyer, Lescheraines, Sainte-Reine, Saint François de Sales ',
               'process_link' => 'https://simplici.grandchambery.fr/je-fais-une-demande-de-branchement-pour-le-territ/',
               'process_draft_mode' => 'false',
-              'process_duration' => '',
-              'provider_id' => '18',
+              'process_duration' => '15',
+              'provider_id' => '20',
             ],
             242 => [
               'process_id' => '243',
               'process_name' => 'Je fais une demande de visite technique',
-              'process_description' => '',
+              'process_description' => 
+              "Vous souhaitez réaliser une des 4 actions suivantes :
+              1. Un projet d’augmentation ou de diminution du diamètre de votre branchement
+              2. Le déplacement, l’ajout ou la suppression d’une installation de comptage
+              3. Une mise en conformité de votre installation de comptage
+              4. Un projet de rénovation de votre branchement plomb ou autres matériaux",
               'process_link' => 'https://formulaires.simplici.grandchambery.fr/eau/Je-fais-une-demande-de-visite-technique/',
               'process_draft_mode' => 'false',
-              'process_duration' => '',
-              'provider_id' => '18',
+              'process_duration' => '5',
+              'provider_id' => '20',
             ],
             243 => [
               'process_id' => '244',
@@ -2258,11 +2281,11 @@ class CreateProcessesTable extends Migration
             247 => [
               'process_id' => '248',
               'process_name' => 'Je souscris mon abonnement',
-              'process_description' => '',
+              'process_description' => 'Pour toutes vos démarches en ligne, vous aurez besoin de vos documents sous format numérique : carte d\'identité, passeport, Kbis, bail, acte notarié, etc.',
               'process_link' => 'https://formulaires.simplici.grandchambery.fr/eau/je-souscris-un-abonnement-au-service-des-eaux/',
               'process_draft_mode' => 'false',
-              'process_duration' => '',
-              'provider_id' => '18',
+              'process_duration' => '15',
+              'provider_id' => '19',
             ],
             248 => [
               'process_id' => '249',

@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use App\Models\Process_annex_document;
 
 class CreateProcessAnnexDocumentsTable extends Migration
 {
@@ -14,15 +15,9 @@ class CreateProcessAnnexDocumentsTable extends Migration
     public function up()
     {
         Schema::disableForeignKeyConstraints();
-<<<<<<< HEAD:database/migrations/2021_05_10_081046_create_process_annex_documents_table.php
         Schema::create('process_annex_documents', function (Blueprint $table) {
            
-            $table->unsignedBigInteger('process_id');
-=======
-        Schema::create('process_providers', function (Blueprint $table) {
-            
-            $table->unsignedBigInteger('process_id')->unsigned();
->>>>>>> eff9a9b724f9afbb239506f7e74a99af7e81413b:database/migrations/2021_04_30_075427_create_process_providers_table.php
+            $table->unsignedInteger('process_id')->unsigned();;
             $table->foreign('process_id')
                 ->references('process_id')
                 ->on('processes')
@@ -31,7 +26,7 @@ class CreateProcessAnnexDocumentsTable extends Migration
 
 
             // Recupertation id container
-            $table->unsignedBigInteger('annex_document_id');
+            $table->unsignedInteger('annex_document_id')->unsigned();;
             $table->foreign('annex_document_id')
                 ->references('annex_document_id')
                 ->on('annex_documents')
@@ -42,6 +37,125 @@ class CreateProcessAnnexDocumentsTable extends Migration
 
             Schema::enableForeignKeyConstraints();
         });
+
+        $data=[
+            0 => [
+              'process_id' => '249',
+              'annex_document_id' => '1',
+            ],
+            1 => [
+                'process_id' => '249',
+                'annex_document_id' => '2',
+              ],
+              2 => [
+                'process_id' => '249',
+                'annex_document_id' => '3',
+              ],
+              3 => [
+                'process_id' => '249',
+                'annex_document_id' => '4',
+              ],
+              4 => [
+                'process_id' => '249',
+                'annex_document_id' => '5',
+              ],
+              5 => [
+                'process_id' => '249',
+                'annex_document_id' => '6',
+              ],
+              6 => [
+                'process_id' => '249',
+                'annex_document_id' => '7',
+              ],
+              7 => [
+                'process_id' => '249',
+                'annex_document_id' => '8',
+              ],
+
+
+              8 => [
+                'process_id' => '37',
+                'annex_document_id' => '9',
+              ],
+              9 => [
+                'process_id' => '37',
+                'annex_document_id' => '10',
+              ],
+              10 => [
+                'process_id' => '37',
+                'annex_document_id' => '11',
+              ],
+
+
+
+              11 => [
+                'process_id' => '242',
+                'annex_document_id' => '12',
+              ],
+              12 => [
+                'process_id' => '242',
+                'annex_document_id' => '13',
+              ],
+              13 => [
+                'process_id' => '242',
+                'annex_document_id' => '14',
+              ],
+              14 => [
+                'process_id' => '242',
+                'annex_document_id' => '15',
+              ],
+              15 => [
+                'process_id' => '242',
+                'annex_document_id' => '16',
+              ],
+
+
+
+              14 => [
+                'process_id' => '243',
+                'annex_document_id' => '17',
+              ],
+              15 => [
+                'process_id' => '243',
+                'annex_document_id' => '18',
+              ],
+
+
+
+              16 => [
+                'process_id' => '43',
+                'annex_document_id' => '19',
+              ],
+
+              17 => [
+                'process_id' => '46',
+                'annex_document_id' => '20',
+              ],
+              18 => [
+                'process_id' => '234',
+                'annex_document_id' => '20',
+              ],
+
+
+
+
+              19 => [
+                'process_id' => '155',
+                'annex_document_id' => '21',
+              ],
+
+              20 => [
+                'process_id' => '155',
+                'annex_document_id' => '22',
+              ],
+              21 => [
+                'process_id' => '155',
+                'annex_document_id' => '23',
+              ],
+
+
+        ];
+        Process_annex_document::insert($data);
     }
 
     /**
@@ -52,6 +166,6 @@ class CreateProcessAnnexDocumentsTable extends Migration
     public function down()
     {
         Schema::disableForeignKeyConstraints();
-        Schema::dropIfExists('process_providers');
+        Schema::dropIfExists('process_annex_documents');
     }
 }

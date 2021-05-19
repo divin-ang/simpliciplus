@@ -132,6 +132,34 @@ class CreateProvidersTable extends Migration
               'provider_phone' => '',
               'provider_postal_address' => '',
             ],
+            18 => [
+                'provider_id' => '19',
+                'provider_name' => 'Simpl\'ici',
+                'provider_phone' => 'Au 04 79 96 86 70 choix 1 pour Chambéry ou au 04 79 54 53 56 pour l\'Antenne des Bauges',
+                'provider_postal_address' => 'Au 298 rue de Chantabord à Chambéry ou avenue Denis Therme à Le Châtelard',
+              ],
+              19 => [
+                'provider_id' => '20',
+                'provider_name' => 'Simpl\'ici',
+                'provider_phone' => 'Au 04 79 96 86 70 choix 4 pour Chambéry ou au 04 79 54 53 56 pour l\'Antenne des Bauges',
+                'provider_postal_address' => 'Au 298 rue de Chantabord à Chambéry ou avenue Denis Therme à Le Châtelard',
+              ],
+              20 => [
+                'provider_id' => '21',
+                'provider_name' => 'Simpl\'ici',
+                'provider_phone' => '08 00 88 10 07',
+                'provider_postal_address' => '',
+              ],
+
+
+
+              21 => [
+                'provider_id' => '22',
+                'provider_name' => 'Simpl\'ici',
+                'provider_phone' => 'Allo Synchro 04 79 68 73 73',
+                'provider_postal_address' => '',
+              ],
+
         ];
          
         Provider::insert($data);
