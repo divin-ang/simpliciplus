@@ -28,7 +28,7 @@ class CreateSubcontainerTable extends Migration
           $data=[
             0 => [
               'subcontainer_id' => '1',
-              'subcontainer_name' => 'Démarches',
+              'subcontainer_name' => 'Autres',
               'container_id' => '2',
             ],
             1 => [
@@ -53,7 +53,7 @@ class CreateSubcontainerTable extends Migration
             ],
             5 => [
               'subcontainer_id' => '6',
-              'subcontainer_name' => 'Démarches',
+              'subcontainer_name' => 'Autres',
               'container_id' => '3',
             ],
             6 => [
@@ -273,7 +273,7 @@ class CreateSubcontainerTable extends Migration
             ],
             49 => [
               'subcontainer_id' => '50',
-              'subcontainer_name' => 'Démarches',
+              'subcontainer_name' => 'Autres',
               'container_id' => '16',
             ],
         ];

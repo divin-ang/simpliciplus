@@ -1695,7 +1695,7 @@ class CreateProcessesTable extends Migration
             'process_link' => 'https://www.service-public.fr/compte/se-connecter?targetUrl=/loginSuccessFromSp&typeCompte=particulier',
             'process_draft_mode' => 'false',
             'process_duration' => '',
-            'provider_id' => '1',
+            'provider_id' => '3',
           ],
           185 => [
             'process_id' => '186',
@@ -1713,7 +1713,7 @@ class CreateProcessesTable extends Migration
             'process_link' => 'https://presaje.sga.defense.gouv.fr/',
             'process_draft_mode' => 'false',
             'process_duration' => '',
-            'provider_id' => '1',
+            'provider_id' => '16',
           ],
           187 => [
             'process_id' => '188',
@@ -1722,7 +1722,7 @@ class CreateProcessesTable extends Migration
             'process_link' => 'https://presaje.sga.defense.gouv.fr/',
             'process_draft_mode' => 'false',
             'process_duration' => '',
-            'provider_id' => '1',
+            'provider_id' => '16',
           ],
           188 => [
             'process_id' => '189',
@@ -1731,7 +1731,7 @@ class CreateProcessesTable extends Migration
             'process_link' => 'https://presaje.sga.defense.gouv.fr/',
             'process_draft_mode' => 'false',
             'process_duration' => '',
-            'provider_id' => '1',
+            'provider_id' => '16',
           ],
           189 => [
             'process_id' => '190',
@@ -1740,7 +1740,7 @@ class CreateProcessesTable extends Migration
             'process_link' => 'https://presaje.sga.defense.gouv.fr/',
             'process_draft_mode' => 'false',
             'process_duration' => '',
-            'provider_id' => '1',
+            'provider_id' => '16',
           ],
           190 => [
             'process_id' => '191',
@@ -1749,7 +1749,7 @@ class CreateProcessesTable extends Migration
             'process_link' => 'https://www.service-public.fr/compte/se-connecter?targetUrl=/loginSuccessFromSp&typeCompte=particulier',
             'process_draft_mode' => 'false',
             'process_duration' => '',
-            'provider_id' => '1',
+            'provider_id' => '16',
           ],
           191 => [
             'process_id' => '192',
@@ -1848,7 +1848,7 @@ class CreateProcessesTable extends Migration
             'process_link' => 'https://simplici.chambery.fr/je-prends-rendez-vous-avec-la-petite-enfance/',
             'process_draft_mode' => 'false',
             'process_duration' => '',
-            'provider_id' => '17',
+            'provider_id' => '1',
           ],
           202 => [
             'process_id' => '203',
@@ -1965,7 +1965,7 @@ class CreateProcessesTable extends Migration
             'process_link' => 'https://www.parcoursup.fr/',
             'process_draft_mode' => 'false',
             'process_duration' => '',
-            'provider_id' => '17',
+            'provider_id' => '18',
           ],
           215 => [
             'process_id' => '216',
@@ -1974,7 +1974,7 @@ class CreateProcessesTable extends Migration
             'process_link' => 'https://www.messervices.etudiant.gouv.fr/centrale_prod?idEtudiantPVE=3110718',
             'process_draft_mode' => 'false',
             'process_duration' => '',
-            'provider_id' => '17',
+            'provider_id' => '18',
           ],
           216 => [
             'process_id' => '217',
@@ -1983,7 +1983,7 @@ class CreateProcessesTable extends Migration
             'process_link' => 'http://www.grandeecolenumerique.fr',
             'process_draft_mode' => 'false',
             'process_duration' => '',
-            'provider_id' => '17',
+            'provider_id' => '18',
           ],
           217 => [
             'process_id' => '218',
@@ -1992,7 +1992,7 @@ class CreateProcessesTable extends Migration
             'process_link' => 'https://www.messervices.etudiant.gouv.fr/depotPVE//?idEtudiantPVE=3110718',
             'process_draft_mode' => 'false',
             'process_duration' => '',
-            'provider_id' => '17',
+            'provider_id' => '18',
           ],
           218 => [
             'process_id' => '219',
@@ -2001,7 +2001,7 @@ class CreateProcessesTable extends Migration
             'process_link' => 'http://cvec.etudiant.gouv.fr/',
             'process_draft_mode' => 'false',
             'process_duration' => '',
-            'provider_id' => '17',
+            'provider_id' => '18',
           ],
           219 => [
             'process_id' => '220',
@@ -2010,7 +2010,7 @@ class CreateProcessesTable extends Migration
             'process_link' => 'https://diplome.gouv.fr',
             'process_draft_mode' => 'false',
             'process_duration' => '',
-            'provider_id' => '17',
+            'provider_id' => '18',
           ],
           220 => [
             'process_id' => '221',
@@ -2019,7 +2019,7 @@ class CreateProcessesTable extends Migration
             'process_link' => 'https://diplome.gouv.fr',
             'process_draft_mode' => 'false',
             'process_duration' => '',
-            'provider_id' => '17',
+            'provider_id' => '18',
           ],
           221 => [
             'process_id' => '222',
@@ -2404,6 +2404,15 @@ class CreateProcessesTable extends Migration
             'process_name' => 'Je contacte le service en charge des autorisations de déménagement',
             'process_description' => '',
             'process_link' => 'https://formulaires.simplici.chambery.fr/contact/je-contacte-le-service-valorisation-et-occupations-du-domaine-public/?sujet=0',
+            'process_draft_mode' => 'false',
+            'process_duration' => '',
+            'provider_id' => '1',
+          ],
+          264 => [
+            'process_id' => '265',
+            'process_name' => 'J\'accède à la plateforme participative de la Ville de Chambéry',
+            'process_description' => '',
+            'process_link' => 'https://participons.chambery.fr/',
             'process_draft_mode' => 'false',
             'process_duration' => '',
             'provider_id' => '1',
