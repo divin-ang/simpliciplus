@@ -12,6 +12,7 @@
         
        
     }
+   
     .bread{
       margin-right: 100%    }
   .active {
@@ -222,6 +223,9 @@
       margin-right: 40px;
      
 
+    }
+    .processes-position{
+      margin-right: 100px;
     }
     .process-text-icon{
       margin-top: 3%;

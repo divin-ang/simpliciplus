@@ -61,10 +61,10 @@ class ChoiceBar extends React.Component {
                   ///  moteur de recherche
                }
 
-               <a className="category_button_choiceBar cont search-engine  col-md" id="category_button_choiceBar_service" href="https://google.fr" >
+               <div className="category_button_choiceBar cont search-engine  col-md" id="category_button_choiceBar_service">
                   <span className="service-title">J'accède directement à un site ou une démarche</span>
 
-               </a>
+               </div>
 
                {
                   ///////////////////////////////// accès direct à un service
