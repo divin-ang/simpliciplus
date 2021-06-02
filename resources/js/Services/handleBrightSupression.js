@@ -20,6 +20,9 @@ export function handleBrightSupression() {
     $(".desk-bread").css("filter", "brightness(100%)");
     //subcontainer style
     $(".subcontainer").css("filter", "brightness(100%)");
-    $(".topic-item").csscss("filter", "brightness(100%)");
+    $(".topic-item").css("filter", "brightness(100%)");
+    // administration style
+   $(".administration-item").css("filter", "brightness(100%)");
+
 
 }

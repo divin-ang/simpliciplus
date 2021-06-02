@@ -56,6 +56,21 @@ export function DarkWhiteContrast(){
     $(".close-button-text").css("color", "#222")
     // $(".close-button-item").css("background-color", "#333")
 
+   // administration style
+   $(".administration-item").css("background-color", "#333");
+   $(".administration-title").css("color", "#fff");
+
+   // process title
+  
+   $(".process_name-title").css("background-color", "#577C90");
+    
+   $(".process-button").css("background-color", "#577C90")
+      
+   $(".providers").css("color", "#222");
+      
+   $(".process-txt").css("color", "#222");
+  
+
 
 
 }

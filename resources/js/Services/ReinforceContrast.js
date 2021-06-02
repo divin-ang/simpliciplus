@@ -60,7 +60,20 @@ export function reinforceContrast() {
     $(".close-button-icon").css("color", "#fff")
     $(".close-button-text").css("color", "#fff")
     // $(".close-button-item").css("background-color", "#333")
+    // administration style
+   $(".administration-item").css("background-color", "#333");
+   $(".administration-title").css("color", "#fff");
 
+   // process title
+  
+   $(".process_name-title").css("background-color", "#333");
+    
+   $(".process-button").css("background-color", "#333");
+      
+   $(".providers").css("color", "#fff");
+      
+   $(".process-txt").css("color", "#fff");
+  
 
 
 

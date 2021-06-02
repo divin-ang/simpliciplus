@@ -62,8 +62,19 @@ export function StandardContrast (){
     $(".close-button-icon").css("color", "")
     $(".close-button-text").css("color", "")
     // $(".close-button-item").css("background-color", "#333")
-
-
+    // administration style
+    $(".administration-item").css("background-color", "");
+    $(".administration-title").css("color", "");
+     // process title
+  
+   $(".process_name-title").css("background-color", "");
+    
+   $(".process-button").css("background-color", "");
+      
+   $(".providers").css("color", "");
+      
+   $(".process-txt").css("color", "");
+ 
 
 
 

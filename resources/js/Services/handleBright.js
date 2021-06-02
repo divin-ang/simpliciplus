@@ -24,7 +24,9 @@ export function handleBright() {
     //subcontainer style
     $(".subcontainer").css("filter", "brightness(50%)");
     // $(".topic-item").css("filter", "brightness(100%)");
-
+  
+   // administration style
+   $(".administration-item").css("filter", "brightness(30%)");
 
 
 }
