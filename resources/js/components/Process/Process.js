@@ -105,8 +105,6 @@ const Process = function (props) {
                             </div>)
                         )
                 )
-
-
             )
         } else {
             return (
@@ -115,7 +113,6 @@ const Process = function (props) {
                     <div key={phone_horaire_index} className="row">
                         <li className="col-4">{phone_horaire[phone_horaire_index]}</li> <li className="col-8">{!phone_horaire_value ? "fermé" : phone_horaire_value}</li>
                     </div>)
-
             )
         }
     }
