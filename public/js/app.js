@@ -5140,6 +5140,42 @@ var Process = function Process(props) {
     }
   }
 
+  function dispaly_horaire(valeur) {
+    if (valeur.includes('"')) {
+      var tab = valeur.split('"');
+      tab.splice(0, 1);
+      return tab.map(function (texte) {
+        return !texte.includes(";") ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h4", {
+          children: texte
+        }) : texte.split(";", 7).map(function (phone_horaire_value, phone_horaire_index) {
+          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+            className: "row",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("li", {
+              className: "col-4",
+              children: phone_horaire[phone_horaire_index]
+            }), " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("li", {
+              className: "col-8",
+              children: !phone_horaire_value ? "fermé" : phone_horaire_value
+            })]
+          }, phone_horaire_index);
+        });
+      });
+    } else {
+      return valeur.split(";", 7).map(function (phone_horaire_value, phone_horaire_index) {
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+          className: "row",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("li", {
+            className: "col-4",
+            children: phone_horaire[phone_horaire_index]
+          }), " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("li", {
+            className: "col-8",
+            children: !phone_horaire_value ? "fermé" : phone_horaire_value
+          })]
+        }, phone_horaire_index);
+      });
+    }
+  }
+
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     process();
   }, []);
@@ -5237,18 +5273,7 @@ var Process = function Process(props) {
                         className: "col-xl-3 col-lg-12"
                       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
                         className: "provider_phone_timetable none container-fluid",
-                        children: value.provider_phone_timetable.split(";", 7).map(function (phone_horaire_value, phone_horaire_index) {
-                          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-                            className: "row",
-                            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("li", {
-                              className: "col-4",
-                              children: phone_horaire[phone_horaire_index]
-                            }), " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("li", {
-                              className: "col-8",
-                              children: phone_horaire_value
-                            })]
-                          }, phone_horaire_index);
-                        })
+                        children: dispaly_horaire(value.provider_phone_timetable)
                       })]
                     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
                       className: displayProcess(value.provider_postal_address) + " row",
@@ -5310,18 +5335,7 @@ var Process = function Process(props) {
                         className: "col-xl-3 col-lg-12"
                       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
                         className: "provider_postal_address_timetable none container-fluid",
-                        children: value.provider_postal_address_timetable.split(";", 7).map(function (postal_address_horaire_value, postal_address_horaire_index) {
-                          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-                            className: "row",
-                            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("li", {
-                              className: "col-4",
-                              children: phone_horaire[postal_address_horaire_index]
-                            }), " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("li", {
-                              className: "col-8",
-                              children: postal_address_horaire_value
-                            })]
-                          }, postal_address_horaire_index);
-                        })
+                        children: dispaly_horaire(value.provider_postal_address_timetable)
                       })]
                     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
                       className: displayProcess(value.provider_write_online) + " row",

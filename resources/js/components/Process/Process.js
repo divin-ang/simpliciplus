@@ -91,6 +91,35 @@ const Process = function (props) {
     }
 
 
+    function dispaly_horaire(valeur) {
+        if (valeur.includes('"')) {
+            let tab = valeur.split('"')
+            tab.splice(0, 1)
+            return (
+                tab.map((texte) =>
+                    !texte.includes(";") ?
+                        (<h4>{texte}</h4>) :
+                        (texte.split(";", 7).map((phone_horaire_value, phone_horaire_index) =>
+                            <div key={phone_horaire_index} className="row">
+                                <li className="col-4">{phone_horaire[phone_horaire_index]}</li> <li className="col-8">{!phone_horaire_value ? "fermé" : phone_horaire_value}</li>
+                            </div>)
+                        )
+                )
+
+
+            )
+        } else {
+            return (
+
+                valeur.split(";", 7).map((phone_horaire_value, phone_horaire_index) =>
+                    <div key={phone_horaire_index} className="row">
+                        <li className="col-4">{phone_horaire[phone_horaire_index]}</li> <li className="col-8">{!phone_horaire_value ? "fermé" : phone_horaire_value}</li>
+                    </div>)
+
+            )
+        }
+    }
+
 
     useEffect(() => { process() }, [])
 
@@ -152,10 +181,7 @@ const Process = function (props) {
                                         <div className="col-xl-3 col-lg-12"></div>
 
                                         <div className="provider_phone_timetable none container-fluid">
-                                            {value.provider_phone_timetable.split(";", 7).map((phone_horaire_value, phone_horaire_index) =>
-                                                <div key={phone_horaire_index} className="row">
-                                                    <li className="col-4">{phone_horaire[phone_horaire_index]}</li> <li className="col-8">{phone_horaire_value}</li>
-                                                </div>)}
+                                            {dispaly_horaire(value.provider_phone_timetable)}
                                         </div>
                                     </div>
                                     {/* FIN AFFICHAGE DU TELEPHONE + HORAIRE  */}
@@ -185,10 +211,7 @@ const Process = function (props) {
                                         <div className="col-xl-3 col-lg-12"></div>
 
                                         <div className="provider_postal_address_timetable none container-fluid">
-                                            {value.provider_postal_address_timetable.split(";", 7).map((postal_address_horaire_value, postal_address_horaire_index) =>
-                                                <div key={postal_address_horaire_index} className="row">
-                                                    <li className="col-4">{phone_horaire[postal_address_horaire_index]}</li> <li className="col-8">{postal_address_horaire_value}</li>
-                                                </div>)}
+                                            {dispaly_horaire(value.provider_postal_address_timetable)}
                                         </div>
                                     </div>
                                     {/* FIN AFFICHAGE DU LIEU + HORAIRE  */}
