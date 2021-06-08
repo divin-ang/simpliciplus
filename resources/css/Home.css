@@ -5,6 +5,15 @@
 .tablet{
     display: none;
 }
+.presentation{
+
+}
+
+.contain-home{
+    
+   
+    height: 100%;
+}
 .state_containers{
     width: 90%;
    
@@ -12,7 +21,7 @@
     border:2px solid;
    
     margin-left: 5%;
-    height: 220px;
+    height: 37vh;
     border-radius: 20px;
     border-color: #E5112F;
     
@@ -38,7 +47,7 @@
 .category_button{
 
     width: 29%;
-    height: 75px;
+    height: 12vh;
     margin-left: 3%;
     margin-bottom: 1%;
     background-color:#577C90;
@@ -67,6 +76,7 @@
     
      
 }
+
 .description{
     font-size: 13px;
     display: block;
