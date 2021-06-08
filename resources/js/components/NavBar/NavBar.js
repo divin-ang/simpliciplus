@@ -68,9 +68,19 @@ let setNightMode =()=>{
      reinforceContrast()
   }
 }
+let controlbackround=()=>{
+  //alert($("#mySidenav").css("width"))
+  if($("#mySidenav").css("width")==="0px"){
+    $("body").css("background-color", "#FFF");
+  }
+  if(sessionStorage.getItem("contrast")==="reinforced" && $("#mySidenav").css("width")==="0px"){
+    $("body").css("background-color", "#222");
+  }
+}
   useEffect(() => {
     close()
     reinforceContrastCall()
+    controlbackround()
 
   })
 

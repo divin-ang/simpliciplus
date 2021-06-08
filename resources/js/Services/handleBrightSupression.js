@@ -24,7 +24,11 @@ export function handleBrightSupression() {
     // administration style
    $(".administration-item").css("filter", "brightness(100%)");
    //body style
-$("body").css("background-color", "");
+  if(sessionStorage.getItem("contrast")==="reinforced"){
+    $("body").css("background-color", "#222");
+  }else{
+    $("body").css("background-color", "#fff");
+  }
 
 
 }
