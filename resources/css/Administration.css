@@ -1,8 +1,8 @@
 @media screen and (min-width:900px) {
     .administration-image{
-        width: 100px;
+        width: 120px;
         height: 80px;
-        margin-left: 40%;
+        text-align: center;
         margin-top: 3%;
         margin-bottom: 3%;
        
@@ -10,14 +10,14 @@
     }
     .poste-maladie-retraite{
     
-        width: 100px;
-        height: 125px;
-        margin-left: 40%;
+
+      
         margin-top: 3%;
+        text-align: center;
     
     }
     .top-botom{
-        margin-left: 20%;
+      text-align: center;
     }
     .administration-title{
         text-align: center;
@@ -25,13 +25,14 @@
     }
     .administration-item{
         display: inline-block;
-        width: 350px;
+        width: 30%;
         border: 1px solid;
         margin-top: 2%;
         margin-left: 3%;
         border-radius: 12px;
         height: 30%;
         text-decoration: none;
+        text-align: center;
         
     }
     .administration-text{

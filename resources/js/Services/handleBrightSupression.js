@@ -23,6 +23,8 @@ export function handleBrightSupression() {
     $(".topic-item").css("filter", "brightness(100%)");
     // administration style
    $(".administration-item").css("filter", "brightness(100%)");
+   //body style
+$("body").css("background-color", "");
 
 
 }

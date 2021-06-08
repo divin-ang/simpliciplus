@@ -27,6 +27,8 @@ export function handleBright() {
   
    // administration style
    $(".administration-item").css("filter", "brightness(30%)");
+//body style
+$("body").css("background-color", "#777");
 
 
 }

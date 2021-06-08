@@ -38,6 +38,7 @@
         outline: none;
         background-color: #707070;
         width: 100%;
+        color: #fff;
     }
     .search_submit_button{
         height: 8.5vh;

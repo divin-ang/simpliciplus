@@ -164,7 +164,7 @@ export default class Subcontainer extends Component {
                                             icon: this.state.processes[0].container_icon,
                                             category_index: 0
 
-                                        }} style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", textAlign: "center", textDecoration: "none" }}>Montrez moi l'ensemble des services
+                                        }} style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", textAlign: "center", textDecoration: "none" }}>Montrez moi l'ensemble des démarches
                            </Link> : ""
                                 }                </div>
                             <Footer></Footer>
