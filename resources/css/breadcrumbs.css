@@ -22,3 +22,29 @@
 .bread-container{
     height: 20px;
 }
+
+@media screen and(max-width:(600px)){
+  .bread-items{
+      font-size:10%;
+  }
+    .bread-icon{
+        margin-top: 16px;
+        display:block;
+        color: red;
+    }
+  }
+  
+  
+  .bread-items{
+    text-decoration: underline;
+     list-style-type: none;
+    
+     margin-left: 2%;
+     
+     font-size: 12px;
+     display: none;
+     
+   }
+  .bread-container{
+      height: 20px;
+  }
