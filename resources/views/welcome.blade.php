@@ -7,7 +7,7 @@
                       minimum-scale=1.0, maximum-scale=1.0, 
                       user-scalable=no, target-densitydpi=device-dpi">
 
-        <title>Laravel</title>
+        <title>SimpliciPlus</title>
         <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
@@ -25,15 +25,18 @@
         <style>
             body {
                 font-family: 'Nunito', sans-serif;
-                width:100%;
+                
+                
+            };
+          
             }
         </style>
     </head>
     <body class="">
-    <div id="index" >
+    <div id="index">
   
   
-  <script src="{{ asset('js/app.js') }}"></script>
+      <script src="{{ asset('js/app.js') }}"></script>
   
  
           

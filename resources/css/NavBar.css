@@ -237,7 +237,9 @@
         .navbar-menu{
             display: none;
         }
-
+  .desk-bread{
+      display: none;
+  }
     }
 
 
