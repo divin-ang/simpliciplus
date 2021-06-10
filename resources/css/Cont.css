@@ -12,6 +12,9 @@
         
        
     }
+    .contain{
+      height: 100%;
+    }
    .cont-container{
      height: fit-content;
    }

@@ -4,9 +4,9 @@ import Breadcrumbs from "../Breadcrumbs/Breadcrumbs"
 import Contrast from "../Contrast/Contrast"
 import Menu from "../NavBar/Menu"
 import NavBar from "../NavBar/NavBar"
-import GrandChambery from "./logos/Grand-Chambery.png"
+import GrandChambery from "./logos/Grand-Chambery.svg"
 import "../../../css/Administration.css"
-import chambery from "./logos/chambery.png"
+import chambery from "./logos/chambery.svg"
 import poleEmploi from "./logos/pole-emploi.svg"
 import caf from "./logos/caf.svg"
 import poste from "./logos/poste.svg"
@@ -18,7 +18,7 @@ const Administration = () => {
 
     return (
 
-        <div>
+        <div className="admin-wall-page">
             <div>
                 <div id="side">
                     <Menu></Menu>
@@ -35,7 +35,7 @@ const Administration = () => {
 
                     <h2 className="administration-title">Je choisi une administration</h2>
 
-                    <div className="top-botom">
+                    <div className="top-botom admin">
                          <a className="grand-chambery  top-botom administration-item" href="https://www.grandchambery.fr/">
                          <p className="administration-text">Grand Chambéry</p>
                          <img  className="administration-image" src={GrandChambery}></img>
@@ -64,7 +64,7 @@ const Administration = () => {
                          
                      </a>
                      <a className="chambery administration-item" href="https://www.laposte.fr/">
-                         <p className="administration-text">La poste</p>
+                         <p className="administration-text">La Poste</p>
                          <img  className="administration-image" src={poste}></img>
                          
                     </a>
@@ -80,17 +80,19 @@ const Administration = () => {
                          
                     </a>
                     <a className="chambery administration-item" href="https://www.lassuranceretraite.fr/">
-                         <p className="administration-text">L'Assurance retraite</p>
+                         <p className="administration-text">L'Assurance Retraite</p>
                          <img  className="administration-image" src={retraite}></img>
                          
                     </a>
 
                     </div>
-                <Footer></Footer>
+                
 
                 </div>
+              
 
             </div>
+            <Footer></Footer>
         </div>
     )
 }

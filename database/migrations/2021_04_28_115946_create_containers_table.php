@@ -37,7 +37,7 @@ class CreateContainersTable extends Migration
             ['container_id'=>12,'container_name'=>"Enfance,scolarité et études",'container_description'=>'Petite enfance,Garde,Bourse','container_icon'=>'child_care,school'],
             ['container_id'=>13,'container_name'=>"Environnement et eau potable",'container_description'=>'Déchetterie,Composte,Services des eaux','container_icon'=>'recycling,delete,water_drop'],
             ['container_id'=>14,'container_name'=>"Aide et solidarité",'container_description'=>'Alimentaire,Ecoute,Accompagnement','container_icon'=>'volunteer_activism'],
-            ['container_id'=>15,'container_name'=>"Activités/Evenement",'container_description'=>'Sport,Pass\'culture','container_icon'=>'sports_soccer,museum'],
+            ['container_id'=>15,'container_name'=>"Activités-Evenement",'container_description'=>'Sport,Pass\'culture','container_icon'=>'sports_soccer,museum'],
             ['container_id'=>16,'container_name'=>"Autres demandes",'container_description'=>'Demandes spécifiques,Contact','container_icon'=>'pending'],
             
            
