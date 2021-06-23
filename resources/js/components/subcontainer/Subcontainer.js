@@ -167,7 +167,9 @@ export default class Subcontainer extends Component {
                                         }} style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", textAlign: "center", textDecoration: "none" }}>Montrez moi l'ensemble des démarches
                            </Link> : ""
                                 }                </div>
+                            <div className="subcontainer-footer">
                             <Footer></Footer>
+                            </div>
                         </div>
                     </div>
 

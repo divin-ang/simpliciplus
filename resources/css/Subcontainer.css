@@ -6,6 +6,9 @@
         height: 500px;
         text-align: center;
     }
+    .subcontainer-footer{
+        margin-top: 50px;
+    }
     .title-group{
         text-align: center;
         margin-left: 35%;
